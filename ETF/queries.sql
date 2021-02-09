@@ -1,5 +1,5 @@
 -- Joins tables
-SELECT country.country, country.date, country.daily_vaccinations, airport.Confirmed, airport.PercentOfBaseline
-FROM country
-JOIN airport
-ON country.country = airport.PercentOfBaseline
+SELECT covid.country, covid.date, covid.daily_vaccinations, airport.Confirmed, airport.AirportName, airport.PercentOfBaseline
+FROM covid
+INNER JOIN airport
+ON covid.Country = covid.Country
