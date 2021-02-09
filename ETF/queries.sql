@@ -1,9 +1,5 @@
-SELECT * FROM airport;
-
-SELECT * FROM county;
-
--- Join tables on county name
-SELECT airport.Country, airport.Date, airport.Confirmed, airport.PercentOfBaseline, country.daily_vaccinations
+-- Joins tables
+SELECT country.country, country.date, country.daily_vaccinations, airport.Confirmed, airport.PercentOfBaseline
 FROM country
-INNER JOIN airport
-ON country.county = airport.county;
+JOIN airport
+ON country.country = airport.PercentOfBaseline
