@@ -1,30 +1,21 @@
  -- Create Two Tables
-create table country (
-country varchar,
-iso_code varchar,
-"date" date,
-total_vaccinations int,
-daily_vaccinations_per_million int,
-vaccines varchar,
-source_name varchar);
+create table covid (
+"Country" varchar,
+"Date" date,
+"Confirmed" int,
+"WHO Region" varchar
+);
 
 
-select * from country
+select * from covid
 
 CREATE TABLE airport (
-"Date" date,
-City varchar,
-"Province/State" varchar,
+"City" varchar,
+"AirportName" varchar,
+"PercentOfBaseline" int,
 "Country" varchar,
-"Lat" int,
-"Long" int,
-"Confirmed" int,
-"Deaths" int,
-"Recovered" int,
-"Active" int,
-"WHO Region" varchar,
-AirportName varchar,
-PercentOfBaseline int
+"Date" date,
+"State"varchar
 );
 
 select * from airport
