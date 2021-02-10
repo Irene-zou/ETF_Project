@@ -1,23 +1,20 @@
  -- Create Two Tables
-create table covid (
-"Country" varchar,
-"Date" date,
+CREATE TABLE covid (
+"Country" TEXT,
+"Date" TEXT,
 "Confirmed" int,
-"WHO Region" varchar
+"WHO Region" TEXT
 );
-
 
 select * from covid
 
 CREATE TABLE airport (
-"City" varchar,
-"AirportName" varchar,
+"City" TEXT,
+"AirportName" TEXT,
 "PercentOfBaseline" int,
-"Country" varchar,
-"Date" date,
-"State"varchar
+"Country" TEXT,
+"Date" TEXT,
+"State" TEXT
 );
 
 select * from airport
-
-D
